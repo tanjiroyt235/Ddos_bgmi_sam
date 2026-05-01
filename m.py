@@ -8,10 +8,10 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # insert your Telegram bot token here
-bot = telebot.TeleBot('8284992545:AAHgf76zMmBHCYoheSWTLkfS0-TIhUNTHg8)
+bot = telebot.TeleBot("7708627034:AAGPyICn6sHl47MiCOc5wLwJr7LKiumuMUw")
 
 # Admin user IDs
-admin_id = ["5950287461"]
+admin_id = ["1414860265"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -48,7 +48,7 @@ allowed_user_ids = read_users()
 
 # Function to log command to the file
 def log_command(user_id, target, port, time):
-    admin_id = ["5950287461"]
+    admin_id = ["1414860265"]
     user_info = bot.get_chat(user_id)
     if user_info.username:
         username = "@" + user_info.username
@@ -357,8 +357,8 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @MR_UGESH
-Official Channel :- https://t.me/+6QBlAJgaKUs5YzZl
+Buy From :- @PremGamingYT1
+Official Channel :- https://t.me/@PremGamingYT1
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -375,7 +375,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''❄️ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ᴅᴅᴏs ʙᴏᴛ, {user_name}! ᴛʜɪs ɪs ʜɪɢʜ ǫᴜᴀʟɪᴛʏ sᴇʀᴠᴇʀ ʙᴀsᴇᴅ ᴅᴅᴏs. ᴛᴏ ɢᴇᴛ ᴀᴄᴄᴇss.
 🤖Try To Run This Command : /help 
-✅BUY :- @MR_UGESH'''
+✅BUY :- @PremGamingYT1'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
